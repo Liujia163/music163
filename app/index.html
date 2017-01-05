@@ -1,0 +1,96 @@
+<!doctype html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-ui-router.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src='js/controllers.js'></script>
+    <script src="js/ctrl/toplistCtrl.js"></script>
+    <script src="js/ctrl/albumCtrl.js"></script>
+    <script src="js/ctrl/artistCtrl.js"></script>
+    <script src="js/ctrl/playlistCtrl.js"></script>
+    <script src="js/ctrl/discoverCtrl.js"></script>
+    <script src="js/ctrl/djradioCtrl.js"></script>
+    <script src="js/animate.js"></script>
+</head>
+
+<body>
+<div  ng-app="myApp" >
+    <!-- We'll also add some navigation: -->
+    <div class="nav" >
+        <ul class="clearfix w">
+            <li class="logo"></li>
+            <li><a ui-sref="discover"><span>首页</span></a></li>
+            <li><a ui-sref="toplist"><span>排行榜</span></a></li>
+            <li><a ui-sref="playlist"><span>歌单</span></a></li>
+            <li><a ui-sref="djradio"><span>主播电台</span></a></li>
+            <li><a ui-sref="artist"><span>歌手</span></a></li>
+            <li><a ui-sref="album"><span>新碟上架<i></i></span></a></li>
+            <li class="login">
+                <input type="text" placeholder='单曲/歌手'/>
+                <span id="login">登&nbsp;录&nbsp;<em></em></span>
+                <div class="loginhidden">
+                    <em></em>
+                    <ul class="clearfix">
+                        <li><i></i><span>手机号登录</span></li>
+                        <li><i></i><span>微信号登录</span></li>
+                        <li><i></i><span>QQ登录</span></li>
+                        <li><i></i><span>新浪微博登录</span></li>
+                        <li><i></i><span>网易邮箱登录</span></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div ui-view></div>
+</div>
+    <div class="footer ">
+        <ul class="clearfix w">
+            <li>
+                <i class="fl"></i>
+                <div class="content fl">
+                    <a href="javascript:;">独立音乐人招募计划</a>
+                    <br/>
+                    <a class="qgray" href="javascript:;">加入我们即将与超过亿万乐迷互动</a>
+                </div>
+            </li>
+            <li>
+                <i class="fl"></i>
+                <a href="javascript:;">音乐专栏招募计划加入我们</a>
+                <br/>
+                <a class="qgray" href="#">与同道中人交流心得</a>
+            </li>
+            <li>
+                <a href="javascript:;">关于网易</a>-
+                <a href="javascript:;">客户服务</a>-
+                <a href="javascript:;"> 服务条款</a>-
+                <a href="javascript:;">网站导航</a>
+                <span ><a class="qgray" href="#">网易公司版权所有©1997-2016杭州乐读科技有限公司运营:</a></span>
+                <span><a href="javascript:;">浙网文[2015]0415-135号意见反馈</a></span>
+            </li>
+        </ul>
+    </div>
+    <div class="music" >
+        <div class="timer">
+            <div class="currenttimer"><img src="images/vol_btn.png" alt=""/></div>
+            <span><em>00:00</em>&nbsp;/&nbsp;<em>33:00</em></span>
+        </div>
+        <audio id="music" src="music/1.mp3" controls="controls" style="display: none;" >
+            Your browser does not support the audio tag.
+        </audio>
+        <div class="control">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        <div class="lock">
+            <div class="sm"></div>
+        </div>
+    </div>
+
+</body>
+<script src="js/main.js"></script>
+</html>

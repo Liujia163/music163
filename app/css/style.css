@@ -1,0 +1,295 @@
+/* nav 头部样式start
+ *  auth:hp writted
+ **/
+@import "smallCss/discover.css";
+@import "smallCss/toplist.css";
+@import "smallCss/album.css";
+@import "smallCss/djradio.css";
+@import "smallCss/playlist.css";
+@import "smallCss/artist.css";
+.nav{
+    min-width: 1100px;
+}
+.nav li{
+    float: left;
+    position: relative;
+}
+.nav ul {;
+    margin: 0 auto;
+}
+div.nav {
+    background: url(../images/topbar.png) repeat-x 0px -81px;
+}
+.nav li.logo{
+    width: 186px;
+    height: 40px;
+    background: url(../images/topbar.png) repeat-x;
+    margin-top: 6px;
+}
+.nav ul .current {
+    margin-right: 10px;
+}
+.nav ul li a {
+    display: inline-block;
+    font: 400 14px/60px "Microsoft yahei";
+    color: white;
+    padding-left:22px;
+}
+.nav ul .current a {
+    background: url(../images/item-bg.png) no-repeat right top;
+}
+.nav ul .current a span {
+    background: url(../images/item-bg.png) no-repeat;
+}
+.nav ul li a:hover {
+    background: url(../images/topbar.png) no-repeat 0px -156px;
+}
+.nav ul li a span {
+    display: inline-block;
+    padding-right: 22px;
+}
+.nav ul li a:hover span {
+    background: url(../images/topbar.png) no-repeat right -156px;
+}
+.nav i{
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 16px;
+    top: -4px;
+    right: -4px;
+    background: url(../images/topbar.png) no-repeat -191px 0;
+}
+.nav .login{
+    float: right;
+}
+
+ #login em.up{
+    background: url(../images/topbar.png) no-repeat right -416px;
+}
+.nav .login input{
+    margin-top: 13px;
+    width: 214px;
+    height: 32px;
+    text-indent: 30px;
+    margin-right: 15px;
+    position: relative;
+    background: url(../images/topbar.png) no-repeat 0px -549px;
+}
+.nav .login em{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 8px;
+    background: url(../images/topbar.png) no-repeat right -378px;
+}
+.nav .login .loginhidden{
+    display: none;
+    position: absolute;
+    right: -42px;
+    bottom: -207px;
+}
+.nav .login .loginhidden ul{
+    border-radius: 5px;
+    background: #2a2a2a;
+}
+.nav .login .loginhidden li{
+    cursor: pointer;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 20px;
+    float: none;
+}
+.nav .login .loginhidden li:hover{
+    background-color: #353535;
+    color: white;
+    border-radius: 5px;
+}
+.nav .login .loginhidden li:nth-of-type(1) i {
+    height: 22px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 12px;
+    background: url(../images/toplist.png) no-repeat left 5px;
+}
+.nav .login .loginhidden li:nth-of-type(2) i {
+    height: 22px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 12px;
+    background: url(../images/toplist.png) no-repeat -20px -19px;
+}
+.nav .login .loginhidden li:nth-of-type(3) i {
+    height: 22px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 12px;
+    background: url(../images/toplist.png) no-repeat -20px -37px;
+}
+.nav .login .loginhidden li:nth-of-type(4) i {
+    height: 22px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 12px;
+    background: url(../images/toplist.png) no-repeat left -19px;
+}
+.nav .login .loginhidden li:nth-of-type(5) i {
+    height: 22px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 12px;
+    background: url(../images/toplist.png) no-repeat left -37px;
+}
+.nav .login .loginhidden em{
+    width: 36px;
+    height: 8px;
+    margin-left: 54px;
+    vertical-align: bottom;
+    background: url(../images/toplist.png) no-repeat right 0px;
+}
+/*nav 头部样式 end*/
+
+
+/* footer底部样式start
+ *  auth:hp writted
+ **/
+.footer{
+    border-top: 1px solid #999999;
+    height: 93px;
+    min-width: 1100px;
+    padding-top: 32px;
+    padding-top: 32px;
+}
+.footer li{
+    float: left;
+    width: 300px;
+}
+.footer li:nth-of-type(3){
+    float: left;
+    width: 400px;
+    margin-top: -6px;
+}
+.footer li i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align:top;
+}
+.footer li:nth-of-type(1) i{
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    background: url(../images/sprite_1.png) no-repeat -400px -80px;
+}
+.footer li:nth-of-type(2) i{
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    background: url(../images/sprite_1.png) no-repeat -400px -126px;
+}
+.footer .qgray{
+    color: #999999;
+    line-height: 26px;
+}
+/*footer底部样式 end*/
+
+/*播放音乐*/
+.music{
+    width: 100%;
+    min-width: 1100px;
+    position: fixed;
+    bottom: -10px;
+    z-index: 1;
+    background: url(../images/playbar_8.png) repeat-x 0px 0px;
+}
+.music i{
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.music i:nth-of-type(1){
+
+     background:url(../images/playbar_8.png) repeat-x 0px -130px;
+     z-index: 2;
+ }
+.music i:nth-of-type(2){
+    width: 38px;
+    height: 38px;
+    z-index: 2;
+    left: 45px;
+    top: -6px;
+    background: url(../images/playbar_8.png) repeat-x 0px -203px;
+}
+.music i:nth-of-type(3){
+    z-index: 2;
+    left: 98px;
+    background: url(../images/playbar_8.png) repeat-x -78px -130px;
+}
+.music i:nth-of-type(1):hover{
+    background:url(../images/playbar_8.png) repeat-x -30px -130px;
+}
+/*.music i:nth-of-type(2):hover{*/
+    /*background: url(../images/playbar_8.png) repeat-x 0px -203px;*/
+/*}*/
+.music i:nth-of-type(3):hover{
+    background: url(../images/playbar_8.png) repeat-x 44px -130px;
+}
+.music .control{
+    position: absolute;
+    top: 18px;
+    left: 145px;
+}
+#music{
+    position: absolute;
+    left: 320px;
+    top: 14px;
+    width: 600px;
+}
+.music .lock{
+    width: 67px;
+    height: 61px;
+    background: url(../images/playbar_8.png) repeat-x 0px -380px;
+    position: absolute;
+    right: 33px;
+    top: -14px;
+}
+.music .lock .sm{
+    width: 18px;
+    height: 17px;
+    background: url(../images/playbar_8.png) repeat-x 72px -380px;
+    position: absolute;
+    right: 32px;
+    top: 6px;
+}
+.music .timer{
+
+    position: absolute;
+    left: 320px;
+    top: 30px;
+    border-radius: 10px;
+    height: 11px;
+    width: 600px;
+    background: #1A1A1A;
+
+}
+.music .timer .currenttimer{
+    position: absolute;
+    border-radius: 10px;
+    height: 11px;
+    width: 0px;
+    top: 0px;
+    left: 0px;
+    background:#C81623;
+}
+.music .timer .currenttimer img{
+    position: absolute;
+    top: -4px;
+    left: -10px;
+
+}
+.music .timer span{
+    position: absolute;
+    right: -83px;
+    top: -3px;
+}

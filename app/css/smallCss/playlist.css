@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/*设置编码集*/
+
+
+/*版心*/
+.l-banxin {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.l-fl {
+    float: left;
+}
+
+.l-fr {
+    float: right;
+}
+.l-all {
+    width: 900px;
+    margin: 0 auto;
+}
+.l-cnt {
+    width: 100%;
+    height: 42px;
+    margin-top: 40px;
+    line-height: 42px;
+    border-bottom: 2px solid #B00A0A;
+}
+.l-cnt h1 {
+    font:900 18px/42px "宋体";
+    display:inline-block;
+    margin-right: 10px;
+}
+.l-cnt span {
+    display:inline-block;
+    width: 75px;
+    height: 25px;
+    font: 400 12px/25px "微软雅黑";
+    color: #0C73C2;
+    text-align: center;
+    cursor: pointer;
+    padding-right: 15px;
+    background-color: #FCFCFC;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    position: relative;
+}
+.l-cnt span:hover {
+    background-color:lavenderblush;
+}
+.l-cnt span s {
+    width: 13px;
+    height: 14px;
+    font: 900 12px "宋体";
+    position: absolute;
+    top: -6px;
+    left: 0px;
+}
+.l-cnt span i {
+    width: 18px;
+    height: 6px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    right: 6px
+}
+.l-cnt .l-xin {
+    width: 90px;
+    height: 30px;
+    font:400 14px/30px "宋体";
+    border: 1px solid #cccccc;
+    margin-top: 5px;
+}
+.l-cnt .l-xin .l-l {
+    width: 45px;
+    background-color: #B70A0B;
+    text-align: center;
+    color: white;
+}
+.l-cnt .l-xin .l-r {
+    width: 45px;
+    background-color:#F5F5F5;
+    text-align: center;
+    color: #333333;
+}
+.l-l:hover{
+    text-decoration: underline;
+}
+.l-r:hover{
+    text-decoration: underline;
+}
+/*初始化end*/
+/*图片布局开始*/
+#l-content {
+    padding-left: 14px;
+}
+.l-box {
+    margin-top: 30px;
+}
+.l-tupian {
+    margin-bottom: 30px;
+}
+.l-box .l-img {
+    width: 140px;
+    height: 190px;
+    margin: 0 25px 0 25px;
+}
+.l-box .l-tu  a{
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background:url("../../images/l-images/1.jpg");
+}
+.l-box .l-conter h2 {
+    font:400 14px "微软雅黑";
+    color: #000000;
+    margin-bottom: 10px;
+}
+.l-box .l-conter p  a{
+    font:400 10px "微软雅黑";
+    color:#666;
+}
+.l-conter h2:hover {
+    text-decoration: underline;
+}
+.l-conter p  a:hover {
+    text-decoration: underline;
+}
+/*图片布局结束*/
+/*底部翻页按钮开始*/
+.l-btn {
+    width:500px;
+    height: 30px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.l-btn li{
+    float: left;
+    padding: 0 4px;
+    margin-top: 2px;
+}
+.l-btn button {
+    float: left;
+    width: 70px;
+    height: 28px;
+    font:400 12px "宋体";
+    margin-top: 2px;
+}
+.l-btn a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    font:500 12px/25px "微软雅黑";
+    color: #000000;
+    text-align: center;
+    border: 1px solid #cccccc;
+}
+.l-btn .l-red {
+    background-color: #CB1213;
+    color: white;
+}
+/*底部翻页按钮结束*/
