@@ -1,23 +1,5 @@
-# 此项由前端兴趣小组共同开发搜索ass
-
-This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
-You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
-
-The seed contains AngularJS libraries, test libraries and a bunch of scripts all preconfigured for
-instant web development gratification. Just clone the repo (or download the zip/tarball), start up
-our (or yours) webserver and you are ready to develop and test your application.
-
-The seed app doesn't do much, just shows how to wire two controllers and views together. You can
-check it out by opening app/index.html in your browser (might not work file `file://` scheme in
-certain browsers, see note below).
-
-_Note: While angular is client-side-only technology and it's possible to create angular webapps that
-don't require a backend server at all, we recommend hosting the project files using a local
-webserver during development to avoid issues with security restrictions (sandbox) in browsers. The
-sandbox implementation varies between browsers, but quite often prevents things like cookies, xhr,
-etc to function properly when an html page is opened via `file://` scheme instead of `http://`._
-
+# 此项目有黑马程序员4期 开发小组共同开发，练习使用。
+此项目模仿网易云音乐，不用做任何商业化，只拿来练习使用、
 
 ## How to use angular-seed
 
@@ -89,7 +71,7 @@ When we upgrade angular-seed's repo with newer angular or testing library code, 
 fetch the changes and merge them into your project with git.
 
 
-## Directory Layout
+## Directory Layout（目录结构）
 
     app/                --> all of the files to be used in production
       css/              --> css files
