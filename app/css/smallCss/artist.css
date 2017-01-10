@@ -1,0 +1,137 @@
+/*公共样式*/
+.r-w {
+    /*版心 提取 */
+    width: 980px;
+    margin: 0 auto;
+}
+
+/*公共样式*/
+
+/*主体start*/
+.r-main {
+    /*height: 1000px;*/
+    border-right: 1px solid #D3D3D3;
+    border-left: 1px solid #D3D3D3;
+    background: #F9F9F9;
+}
+
+/*主体end*/
+
+/*左边选择栏start*/
+.r-left {
+    /*height: 955px;*/
+    width: 160px;
+    padding: 45px 10px 0;
+}
+
+.r-left ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.r-left ul li dt {
+    /*line-height: 30px;*/
+    font: 700 16px/30px "microsoft yahei";
+}
+
+.r-left ul li dd {
+    line-height: 28px;
+    border: 1px solid #F9F9F9;
+}
+
+.r-left ul li dd span {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #D3D3D3;
+    vertical-align: middle;
+    margin: 0 10px 5px;
+}
+
+.r-left ul li dd a {
+    font: 400 14px/28px "microsoft yahei";
+}
+
+.r-left ul li dd:hover {
+    border: 1px solid #D3D3D3;
+    background: #FBFBFB;
+    cursor: pointer;
+}
+
+.r-left ul li dd:hover a {
+    color: #C81623;
+}
+
+.r-left ul li dd:hover span {
+    background: #C81623;
+}
+
+/*左边选择栏end*/
+
+/*右边信息栏start*/
+.r-right {
+    width: 719px;
+    /*height: 955px;*/
+    padding: 45px 40px 0;
+    border-left: 1px solid #D3D3D3;
+    background: white;
+}
+.r-right ul li i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.r-right .r-top ul li {
+    margin-bottom: 25px;
+}
+
+.r-right .r-top ul ol dt {
+    height: 35px;
+    font: 500 20px "microsoft yahei";
+    border-bottom: 2px solid #C20C0C;
+}
+
+.r-right .r-top ul ol dt em {
+    vertical-align: top;
+}
+
+.r-right .r-top ul ol dt a {
+    font: 400 14px/35px "microsoft yahei";
+    float: right;
+}
+
+.r-right .r-top ul ol dd {
+    float: left;
+    width: 130px;
+    height: 164px;
+    margin: 20px 17px 0 0;
+}
+.r-right .r-top ul ol dd.last{
+    margin-right: 0;
+}
+
+.r-right .r-top ul ol dd span{
+    line-height: 34px;
+}
+
+.r-right .r-top ul ol dd i {
+    margin-top: 9px;
+    float: right;
+}
+
+.r-right .r-bottom {
+    border-top: 1px dotted #d4d4d4;
+    padding: 10px 9px 20px;
+}
+.r-right .r-bottom ul{
+    float: left;
+    width: 140px;
+}
+.r-right .r-bottom ul li {
+    line-height: 30px;
+}
+.r-right .r-bottom ul li i {
+    vertical-align: middle;
+}
+/*右边信息栏end*/

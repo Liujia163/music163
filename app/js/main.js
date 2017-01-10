@@ -115,6 +115,37 @@ window.onload=function(){
             tbtn.children[0].style.left=-10+600*allT/music.duration+'px';
         },1000)
     }
-}
+    //完成登录框
+    hpalert();
 
+}
+function hpalert(){
+    var hpLogin = document.getElementById("hp-login");
+    //console.log(hpLogin.children[1].children[1].children[1].children[0]);
+    hpLogin.children[1].children[1].children[1].children[0].onclick=function(){
+        hpLogin.children[1].style.display='none';
+        hpLogin.children[0].style.display='block';
+    }
+    hpLogin.children[0].children[1].children[0].children[2].onclick=function(){
+        hpLogin.children[0].style.display='none';
+        hpLogin.children[1].style.display='block';
+    }
+    hpLogin.children[0].children[0].children[1].onclick=function(){
+        hpLogin.style.display='none';
+        window.document.body.onscroll=null;
+    }
+    hpLogin.children[1].children[0].children[1].onclick=function(){
+        hpLogin.style.display='none';
+        window.document.body.onscroll=null;
+    }
+}
+var htop=0;
+function alertlogin(){
+    var hpLogin = document.getElementById("hp-login");
+    hpLogin.style.display='block';
+    htop=window.pageYOffset;
+    window.document.body.onscroll=function(){
+        window.scrollTo(0,htop);
+    }
+}
 

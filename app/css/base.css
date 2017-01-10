@@ -84,7 +84,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*废物利用*/
-s, i, em {
+b,s, i, em {
+    font-weight: normal;
     font-style: normal;
     text-decoration: none;
 }
@@ -117,7 +118,7 @@ s, i, em {
 }
 
 /*公共类*/
-.w {
+.ww {
     /*版心 提取 */
     width: 1100px;
     margin: 0 auto;

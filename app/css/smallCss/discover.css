@@ -1,4 +1,430 @@
-.lunbotu{
-    height: 1500px;
-    background: pink;
+/*这是轮播图的开始*/
+.s-banner {
+    width: 100%;
+    height: 336px;
+    background-color: #2C2C2C;
+    position: relative;
 }
+.s-imgBanner {
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.s-imgBanner ul{
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5840px;
+}
+.s-imgBanner ul li {
+    width: 730px;
+    height: 336px;
+    overflow: hidden;
+    float: left;
+}
+.s-imgBanner ol {
+    position: absolute;
+    right:50%;
+    margin-right: 50px;
+    bottom: 5px;
+    line-height: 20px;
+}
+.s-imgBanner ol li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    background:#fff ;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.s-imgBanner ol li:hover {
+    background-color: red;
+}
+.s-imgBanner ol li.current {
+    background-color: red;
+}
+.s-imgBanner .s-kehuduan {
+    position: relative;
+    width: 248px;
+    height: 334px;
+    border: 1px solid #2C2C2C;
+    float:right;
+    background:black url(../../images/banner-kehuduan1.png) 0 0 no-repeat;
+}
+.s-imgBanner .s-kehuduan a {
+    width: 216px;
+    height: 54px;
+    position: absolute;
+    top: 213px;
+    left: 19px;
+    background: url(../../images/banner-kehuduan1.png) -1px -341px no-repeat;
+    display: inline-block;
+}
+.s-imgBanner .s-kehuduan p {
+    position: absolute;
+    top: 275px;
+    left: 15px;
+}
+.s-arrowsL {
+    width: 39px;
+    height: 63px;
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    cursor: pointer;
+    left: 120px;
+    background: url(../../images/banner1.png) 0 -357px no-repeat;
+}
+.s-arrowsR {
+    width: 39px;
+    height: 63px;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    margin-top: -32px;
+    right: 120px;
+    background: url(../../images/banner1.png) 0 -499px no-repeat;
+}
+/*这是banner的结束*/
+/*这是主体的开始*/
+/*1.0nav的开始*/
+body {
+    background-color: #F5F5F5;
+}
+.s-main{
+    width: 980px;
+    /*height: 1000px;*/
+    /*background-color: red;*/
+    margin: 0 auto;
+    background-color: #fff;
+}
+.s-main .s-content {
+    width: 688px;
+    /*height: 1000px;*/
+    background-color: #fff;
+    float: left;
+    padding: 25px 20px;
+    border-left: 1px solid #D3D3D3;
+    border-right: 1px solid #D3D3D3;
+
+
+}
+
+.s-main .s-content div.nav {
+    position: relative;
+    background: #fff;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #C81623;
+}
+.s-main .s-content .nav h1 {
+    font-size: 25px;
+    height: 0;
+    color: #333333;
+}
+.s-main .s-content .nav i {
+    background: url(../../images/bg.png) 0 -120px no-repeat;
+    vertical-align: sub;
+
+}
+.s-main .s-content .nav ul {
+    margin-left: 150px;
+}
+.s-main .s-content .nav li {
+    padding: 0 15px;
+    font-size: 16px;
+    border-right:1px solid #666666;
+    cursor: pointer;
+}
+.s-main .s-content .nav .teshu{
+    border-right:0px solid #666666;
+
+}
+.s-main .s-content .nav .s-span {
+    padding-left: 160px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.s-main .s-content .nav em {
+    color: #C81623;
+    font: 900 10px "黑体";
+    vertical-align: middle;
+    cursor: pointer;
+}
+/*1.0nav的结束*/
+/*2.0这是img的开始*/
+.s-main .s-content .s-img {
+    position: relative;
+    margin-right: 32px;
+    float: left;
+}
+.s-main .s-content .s-img .s-smallimg {
+    margin-top: 22px;
+}
+.s-main .s-content .s-img a {
+    margin-top: 5px;
+    display: block;
+    font-size: 14px;
+    color: black;
+}
+.s-main .s-content .s-img a:hover {
+   text-decoration: underline;
+}
+.s-main .s-content .s-img .s-mycontent {
+    width: 140px;
+    height: 27px;
+    background-color:rgba(89,106,117,0.5);
+    position:absolute;
+    bottom: 23px;
+}
+.s-main .s-content .s-img .s-mycontent .bofangqi {
+    width: 18px;
+    height: 16px;
+    background: url(../../images/s-image/111.png) 0 0 no-repeat ;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.s-main .s-content .s-img .s-mycontent .erji {
+    width: 15px;
+    height: 15px;
+    /*background-color: blue;*/
+    background: url(../../images/s-image/111.png) 0 -23px no-repeat ;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+.s-main .s-content .s-img .s-mycontent .dianjishu{
+    width: 35px;
+    height: 15px;
+    color: #ccc;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 8px;
+}
+/*这是img的结束*/
+.s-main .s-content .s-tupian img {
+    margin: 50px 0px 40px 0px;
+}
+/*这是中部导航的开始*/
+.s-main .s-content .nav .s-span {
+    margin-left: 450px;
+    position: absolute;
+    top: 0;
+}
+/*这是中部导航的结束*/
+.s-main .s-content .s-lunbotu {
+    width: 688px;
+    height: 187px;
+    /*background-color: orange;*/
+    background: url(../../images/s-image/456.png) no-repeat;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+/*这是榜单内容的开始*/
+.s-main .s-content .s-bigbox {
+    width: 688px;
+    height: 470px;
+    /*background-color: #666;*/
+}
+.s-main .s-content .s-bigbox .s-smallbox {
+    width: 227px;
+    height: 470px;
+    border: 1px solid #D3D3D3;
+    margin-top: 20px;
+    position: relative;
+    background-color: #F4F4F4;
+    float: left;
+}
+.s-main .s-content .s-bigbox .s-smallbox img {
+    margin: 19px 0 0 19px;
+}
+.s-main .s-content .s-bigbox .s-smallbox .aaa {
+    font-weight: 900;
+    font-size: 14px;
+    position: absolute;
+    top: 30px;
+    left: 130px;
+    cursor: pointer;
+}
+.s-main .s-music {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: url(../../images/s-image/icon2.png) no-repeat -25px 0;
+    top: 57px;
+    right: 75px;
+    cursor: pointer;
+}
+
+.s-main .shoucangjia {
+    position: absolute;
+    width: 21px;
+    height: 18px;
+    background: url(../../images/s-image/icon2.png) no-repeat -25px -26px;
+    top: 58px;
+    right: 45px;
+    cursor: pointer;
+
+}
+.s-main .s-bigbox .s-smallbox ul {
+    margin-top: 20px;
+}
+.s-main .s-bigbox .s-smallbox li {
+    width: 228px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    background-color: #E8E8E8;
+    position: relative;
+    cursor: pointer;
+}
+.s-main .s-bigbox .s-smallbox ul .wenzi {
+    margin-left: 0px;
+    color: #000;
+}
+.s-main .s-bigbox .s-smallbox ul .num {
+    font-size: 18px;
+    color: red;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+.s-main .s-bigbox .s-smallbox ul li #span{
+    opacity: 0;
+    cursor: pointer;
+}
+.s-main .s-bigbox .s-smallbox ul li #span:hover {
+    opacity: 1;
+
+}
+.s-main .s-bigbox .s-smallbox ul li .s-music{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url(../../images/s-image/icon2.png) no-repeat -80px -340px;
+    top: 10px;
+    right: 75px;
+}
+.s-main .s-bigbox .s-smallbox ul li .tianjia{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url(../../images/s-image/icon2.png) no-repeat -87px -455px;
+    top: 10px;
+    right: 55px;
+}
+.s-main .s-bigbox .s-smallbox ul li .shoucangjia{
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    background: url(../../images/s-image/icon2.png) no-repeat -110px 0px;
+    top: 10px;
+    right: 25px;
+}
+
+/*这是榜单内容的结束*/
+
+
+/*这是侧边栏样式的开始*/
+/*1.0用户登录*/
+.s-main .s-sidebar {
+    width: 248px;
+    height: 1430px;
+    /*background-color: blue;*/
+    float: right;
+    border-left: 1px solid #D3D3D3;
+    border-right: 1px solid #D3D3D3;
+
+}
+.s-sidebar .s-enter {
+    width: 248px;
+    height: 123px;
+    position: relative;
+    border-bottom: 1px solid #B1B1B1;
+    background: url(../../images/s-image/silder.1.png);
+}
+.s-sidebar .s-enter .s-p {
+    margin-top: 50px;
+    margin-left: 25px;
+    cursor: pointer;
+
+}
+.s-sidebar .s-enter .s-denglu {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: #D51218;
+    border-radius: 3px;
+    position: absolute;
+    left: 75px;
+    bottom: 18px;
+}
+.s-sidebar .s-enter .s-text {
+    font-size: 12px;
+    display: inline-block;
+    color: #fff;
+    line-height: 30px;
+    padding-left: 27px;
+}
+.s-sidebar .s-dir {
+    width: 248px;
+    /*height: 1300px;*/
+    color: #fff;
+    margin: 20px;
+}
+.s-sidebar .s-dir .s-hd {
+    width: 208px;
+    height: 30px;
+    border-bottom: 2px solid #CCCCCC;
+}
+.s-sidebar .s-dir .s-hd .left {
+    float: left;
+    font-weight: 900;
+    color: #000000;
+    cursor: pointer;
+
+}
+.s-sidebar .s-dir .s-hd .right {
+    float: right;
+    color: #666;
+    cursor: pointer;
+}
+.s-sidebar .s-person {
+    width: 208px;
+    height: 60px;
+    margin-left: 20px;
+    border: 1px solid #E9E9E9;
+    margin-bottom: 15px;
+}
+.s-sidebar .s-person .s-tp {
+    width: 60px;
+    height: 60px;
+    /*background-color: orange;*/
+    background-color: cornflowerblue;
+
+    float: left;
+}
+.s-sidebar .s-person span {
+    float: left;
+}
+.s-sidebar .s-person span .s-top {
+    color: #333;
+    margin: 12px 0 0 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.s-sidebar .s-person span .s-bottom {
+    font-size: 10px;
+    margin: 3px 0 0 12px;
+    cursor: pointer;
+
+}
+
+/*这是侧边栏样式的结束*/
+/*这是主体的结束*/

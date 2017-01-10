@@ -20,8 +20,8 @@
 <body>
 <div  ng-app="myApp" >
     <!-- We'll also add some navigation: -->
-    <div class="nav" >
-        <ul class="clearfix w">
+    <div class="nav nav1" >
+        <ul class="clearfix ww">
             <li class="logo"></li>
             <li><a ui-sref="discover"><span>首页</span></a></li>
             <li><a ui-sref="toplist"><span>排行榜</span></a></li>
@@ -45,10 +45,10 @@
             </li>
         </ul>
     </div>
-    <div ui-view></div>
+    <div ui-view style="background: #F5F5F5"></div>
 </div>
     <div class="footer ">
-        <ul class="clearfix w">
+        <ul class="clearfix ww">
             <li>
                 <i class="fl"></i>
                 <div class="content fl">
@@ -78,7 +78,7 @@
             <div class="currenttimer"><img src="images/vol_btn.png" alt=""/></div>
             <span><em>00:00</em>&nbsp;/&nbsp;<em>33:00</em></span>
         </div>
-        <audio id="music" src="music/1.mp3" controls="controls" style="display: none;" >
+        <audio id="music" src="music/1.mp3" control s="controls" style="display: none;" >
             Your browser does not support the audio tag.
         </audio>
         <div class="control">
@@ -86,11 +86,49 @@
             <i></i>
             <i></i>
         </div>
+        <span style="    position: absolute;
+    left: 50%;
+    margin-left: -330px;
+    margin-top: 9px;
+    color: #d4d4d4;">咋拉粑粑</span>
         <div class="lock">
             <div class="sm"></div>
         </div>
     </div>
+<div id="hp-login" style="display: none;">
+    <div class="wrap">
+        <div class="title"><span>登录</span><i>×</i></div>
+        <div class="content clearfix">
+            <div class="left">
+                <img src="images/platform.png" alt=""/>
+                <bottom>手机号登录</bottom>
+                <bottom>注&nbsp;&nbsp;册</bottom>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="javascrpt:;">微信登录</a></li>
+                    <li><a href="javascrpt:;">QQ登录</a></li>
+                    <li><a href="javascrpt:;">微博登录</a></li>
+                    <li><a href="javascrpt:;">网易邮箱登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrap1">
+        <div class="title"><span>注册</span><i>×</i></div>
+        <div class="content clearfix">
+            <form>
+                <label for="phone">手机号:</label>
+                <input type="text" id="phone" placeholder="请输入手机号"/>
+                <br />
+                <label for="password">密码:</label>
+                <input type="password" id="password" placeholder="请输入密码，密码不少于6位"/>
+            </form>
+            <div class="fanhui"><a href="javascript:;"><&nbsp;返回登录</a></div>
+        </div>
+</div>
 
+</div>
 </body>
 <script src="js/main.js"></script>
 </html>

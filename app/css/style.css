@@ -7,7 +7,7 @@
 @import "smallCss/djradio.css";
 @import "smallCss/playlist.css";
 @import "smallCss/artist.css";
-.nav{
+.nav1{
     min-width: 1100px;
 }
 .nav li{
@@ -88,6 +88,7 @@ div.nav {
     position: absolute;
     right: -42px;
     bottom: -207px;
+    z-index: 100;
 }
 .nav .login .loginhidden ul{
     border-radius: 5px;
@@ -156,8 +157,8 @@ div.nav {
 .footer{
     border-top: 1px solid #999999;
     height: 93px;
+    background-color: #F9F9F9;
     min-width: 1100px;
-    padding-top: 32px;
     padding-top: 32px;
 }
 .footer li{
@@ -292,4 +293,132 @@ div.nav {
     position: absolute;
     right: -83px;
     top: -3px;
+}
+
+body #hp-login{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background:transparent;
+}
+#hp-login .wrap{
+    position: absolute;
+    width: 550px;
+    top: 100px;
+    left: 50%;
+    margin-left: -275px;
+    height: 300px;
+    z-index: 1;
+}
+#hp-login .wrap1{
+    position: absolute;
+    width: 550px;
+    top:100px;
+    left: 50%;
+    margin-left: -275px;
+    height: 300px;
+}
+#hp-login .title{
+    position: relative;
+    height: 40px;
+    background: url("../images/bg.jpg");
+}
+#hp-login .title span{
+    color: white;
+    margin-left: 15px;
+    font-weight: bold;
+    line-height: 40px;
+}
+#hp-login .title i{
+    color: white;
+    position: absolute;
+    right: 20px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+}
+#hp-login .content{
+    text-align: center;
+    height: 200px;
+    background: white;
+    padding: 40px 20px 40px 20px;
+}
+#hp-login .content .left{
+    float: left;
+    border-right: 1px dashed #999999;
+    width: 270px;
+}
+#hp-login .content .right{
+    float: left;
+    width: 235px;
+    height: 210px;
+    background: url("../images/dl.png");
+}
+#hp-login .content bottom{
+    width: 150px;
+    padding: 5px 15px;
+    display: block;
+    margin: 10px 0 0 50px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+#hp-login .content bottom:nth-of-type(1){
+    background-color: #297AC7;
+    margin: 30px 0 0 50px;
+}
+#hp-login .content bottom:nth-of-type(2){
+    color: black;
+    background: #F4F4F4;
+    margin: 15px 0 0 50px;
+
+}
+#hp-login .content bottom:nth-of-type(1):hover{
+    background-color: #439bc7;
+}
+#hp-login .content bottom:nth-of-type(2):hover{
+    background: #e2eff4;
+}
+#hp-login  .right ul{
+    margin-left: 88px;
+    text-align: left;
+}
+#hp-login  .right li{
+    line-height: 54px;
+    font-size: 16px;
+}
+#hp-login form{
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+#hp-login  label{
+    display: block;
+    margin-top: 10px;
+
+}
+#hp-login input{
+    padding-left: 5px;
+    margin-top: 10px;
+    width: 250px;
+    height: 26px;
+    border:1px solid #b6b6b6;
+    border-radius: 2px;
+}
+#hp-login .fanhui{
+    background: #F7F7F7;
+    margin-top:50px;
+    width: 520px;
+    height: 37px;;
+    margin-left: -20px;
+    border-top: 1px solid #BBbbbb;
+    padding: 20px 0 0 30px;
+    text-align: left;
+}
+
+#hp-login .fanhui a{
+    color: #0C73C2;
 }
